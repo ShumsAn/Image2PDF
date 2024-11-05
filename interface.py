@@ -33,8 +33,8 @@ class SmartPDF(Frame):
         self.button8 = Button(self, text="Переименовать файлы по номерам(Если наименования русские)",
                               command=lambda: rename_images_to_sequential_numbers(self.directory_path),width=60)
         self.button8.grid(row=3, column=0)
-        self.button6 = Button(self, text="Resize_image alpha 85",
-                              command=lambda : resize_image(self.images,self.directory_path, self.directory_resize,85),
+        self.button6 = Button(self, text="Resize_image alpha 0.85",
+                              command=lambda : resize_image(self.images,self.directory_path, self.directory_resize,0.85),
                                                 width=60)
         self.button6.grid(row=1, column=1)
         # self.text_box = Text(width=30, height=2, bg='darkgreen', fg='white', wrap=WORD)
