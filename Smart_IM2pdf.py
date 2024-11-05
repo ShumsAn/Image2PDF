@@ -13,13 +13,10 @@ def resize_image(list_img, input_path, output_path, alpha):
     i = 0
     for img in list_img:
         i += 1
-        print(i)
-        full_path_source = os.path.join(input_path, img)
-        print(full_path_source)
+        full_path_source = os.path.join(input_path, img)   
         #Загружаем изображение
         image = cv2.imread(full_path_source)
         # Получаем новые размеры изображения
-        print(f'{type(image)}')
         new_width = int(image.shape[1] * alpha)
         new_height = int(image.shape[0] * alpha)
         # Уменьшаем размер изображения
